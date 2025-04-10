@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="#" />
+    <title>BASE DE DATOS RUNNERS HD</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Icono -->
+    <link rel="shortcut icon" href="assets/icons/icon.png">
+    <!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="assets/datatables/datatables.min.css"/>
+    <!--datables estilo bootstrap 4 CSS-->
+    <link rel="stylesheet"  type="text/css" href="assets/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+    <!--font awesome con CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+
+    <h3 align="center">BASE DE DATOS RUNNERS HD</h3>
+    <h6 align="center">// by ISC Alex Lechuga //</h6>
+
+
+    <style>
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Ajusta este valor según necesites */
+        align-items: center; /* Centra verticalmente si es necesario */
+      }
+    </style>
+    
+
+
+
+
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Logo 1" width="100" class="logo">
+      <img src="logo2.png" alt="Logo 2" width="100" class="logo">
+    </div>
+
+
+
+
+ 
+    <div style="height:50px"></div>
+     <!-- Tabla -->
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="table-responsive">
+              <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Ciudad</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Mes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Eduardo Daniel Olivares de la Rosa</td>
+                    <td>edu1585_z@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1985-01-15</td>
+                    <td>Enero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Elisa Guevara López</td>
+                    <td>elisa-guev@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1988-12-06</td>
+                    <td>Diciembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>José Manuel Rincón López</td>
+                    <td>manardieg@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1981-05-08</td>
+                    <td>Mayo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Zahira Sanchez Espino</td>
+                    <td>zahirasanespino@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1974-04-10</td>
+                    <td>Abril</td>
+                  </tr>
+
+                  <tr>
+                    <td>Verónica Gabriela Rosales Encina</td>
+                    <td>gabrielarosen@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1974-10-07</td>
+                    <td>Octubre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Sergio Mayorga</td>
+                    <td>x</td>
+                    <td>Zacatecas</td>
+                    <td>0001-04-29</td>
+                    <td>Abril</td>
+                  </tr>
+
+                  <tr>
+                    <td>Nancy Salazar Montelongo</td>
+                    <td>economy.nancy@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1987-01-02</td>
+                    <td>Enero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Lorena Castro Magallan</td>
+                    <td>lorenacastrozac@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>0001-10-21</td>
+                    <td>Octubre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Lauris</td>
+                    <td>x</td>
+                    <td><Zacatecas</td>
+                    <td>1980-10-26</td>
+                    <td>Octubre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Karla Maritza Salcedo Sifuentes</td>
+                    <td>x</td>
+                    <td>Zacatecas</td>
+                    <td>1985-08-11</td>
+                    <td>Agosto</td>
+                  </tr>
+
+                  <tr>
+                    <td>Karina Mendoza Ortega</td>
+                    <td>karinasoy29@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1974-12-29</td>
+                    <td>Diciembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Jorge Rivera</td>
+                    <td>jriram.rivera3@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1975-04-25</td>
+                    <td>Abril</td>
+                  </tr>
+
+                  <tr>
+                    <td>Jorge Ibarragán Rodriguez</td>
+                    <td>RUNNINGZACATECAS@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>0001-07-25</td>
+                    <td>Julio</td>
+                  </tr>
+
+                  <tr>
+                    <td>Guillermo López Aguilera</td>
+                    <td>x</td>
+                    <td>Zacatecas</td>
+                    <td>0000-00-00</td>
+                    <td>Enero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Flor Pamela Castro García</td>
+                    <td>kamela86@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1985-03-27</td>
+                    <td>Marzo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Felipe de Jesús Barraza García (pollo)</td>
+                    <td>felipe33_81@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1993-02-06</td>
+                    <td>Febrero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Fabio Enrique Navarro Sandoval</td>
+                    <td>navarro_fes@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1978-07-27</td>
+                    <td>Julio</td>
+                  </tr>
+
+                  <tr>
+                    <td>Bernardo Gutiérrez Sánchez</td>
+                    <td>berna8869@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1987-08-11</td>
+                    <td>Agosto</td>
+                  </tr>
+
+                  <tr>
+                    <td>Carolina Alejandra Díaz Rosales</td>
+                    <td>caroldiazr2002@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1984-01-03</td>
+                    <td>Enero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Carlos Andres Luna Alvarado</td>
+                    <td>lunaing@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1971-12-26</td>
+                    <td>Diciembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Javier Saucedo Vázquez</td>
+                    <td>saucedo_ja@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1974-05-04</td>
+                    <td>Mayo</td>
+                  </tr>
+
+                  <tr>
+                    <td>María Elizabeth López Sandoval</td>
+                    <td>Elopez_89@outlook.com</td>
+                    <td>Zacatecas</td>
+                    <td>1989-01-18</td>
+                    <td>Enero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Ofelia Hernández Corpus</td>
+                    <td>ofe_2378@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1978-01-23</td>
+                    <td>Enero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Chito García Robles</td>
+                    <td>jjosegarciarob@yahoo.com.mx</td>
+                    <td>Zacatecas</td>
+                    <td>1976-05-09</td>
+                    <td>Mayo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Lidia Yesenia Albores Méndez</td>
+                    <td>alboresyesenia@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1980-05-25</td>
+                    <td>Mayo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Maria del Rocío Aguilar flores</td>
+                    <td>rociojfl1968ag@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1968-08-17</td>
+                    <td>Agosto</td>
+                  </tr>
+
+                  <tr>
+                    <td>Frida Rubio Rentería</td>
+                    <td>fridarubio7@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1977-10-16</td>
+                    <td>Octubre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Cesar Neftali Lujan Garcia</td>
+                    <td>Sin correo de momento</td>
+                    <td>Zacatecas</td>
+                    <td>1975-07-28</td>
+                    <td>Julio</td>
+                  </tr>
+
+                  <tr>
+                    <td>Octavio Almaraz Romo</td>
+                    <td>octavioalro3@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1991-08-02</td>
+                    <td>Agosto</td>
+                  </tr>
+
+                  <tr>
+                    <td>César Daniel Silva Ramos</td>
+                    <td>cesaruaz@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1982-06-14</td>
+                    <td>Junio</td>
+                  </tr>
+
+                  <tr>
+                    <td>Nancy Almaraz Romo</td>
+                    <td>usuariodos69@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1986-03-31</td>
+                    <td>Marzo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Luisa Sandoval Preciado</td>
+                    <td>luisapreciado173a@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>2003-05-30</td>
+                    <td>Mayo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Miriam Monserrat Acosta Dominguez</td>
+                    <td>monse.pagos@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1984-11-06</td>
+                    <td>Noviembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Carlos de Jesús Medrano mtz</td>
+                    <td>chatarrachavozac@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1984-11-06</td>
+                    <td>Noviembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Rosalba Hernández Ibáñez</td>
+                    <td>rosalbahernandezib@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1993-09-17</td>
+                    <td>Septiembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Rodolfo Pérez</td>
+                    <td>rodolfoperez587@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1986-08-08</td>
+                    <td>Agosto</td>
+                  </tr>
+
+                  <tr>
+                    <td>Emilio Eduardo Arredondo Vega</td>
+                    <td>eeav891@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1991-09-08</td>
+                    <td>Septiembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Ma Esthela Sierra Sánchez</td>
+                    <td>maesthelaserra@gmail</td>
+                    <td>Zacatecas</td>
+                    <td>1966-11-06</td>
+                    <td>Noviembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Rocío Janeth Herrera Serrano</td>
+                    <td>arq.janetherrera@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1988-12-31</td>
+                    <td>Diciembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Ruiz Reyes Eleazar Davinci</td>
+                    <td>eleazar_da@yahoo.com.mx</td>
+                    <td>Zacatecas</td>
+                    <td>1974-07-10</td>
+                    <td>Julio</td>
+                  </tr>
+
+                  <tr>
+                    <td>Irma Leticia Pérez Torres</td>
+                    <td>Peti870303mzsrrr03</td>
+                    <td>Zacatecas</td>
+                    <td>1987-03-03</td>
+                    <td>Marzo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Felipe Puch Ceballos</td>
+                    <td>Felipe.pucb74@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1974-03-27</td>
+                    <td>Marzo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Eliecer Isaac Pérez Montelongo</td>
+                    <td>eliecer.isaacpm@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1994-06-07</td>
+                    <td>Junio</td>
+                  </tr>
+
+                  <tr>
+                    <td>Ramón Ramírez Hernández</td>
+                    <td>rarahe2002@yahoo.com</td>
+                    <td>Zacatecas</td>
+                    <td>1968-09-12</td>
+                    <td>Septiembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Beatriz Navas Gandara</td>
+                    <td>betty_navas@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1969-02-16</td>
+                    <td>Febrero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Rubén Omar Ortega Díaz</td>
+                    <td>burromar@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1984-09-05</td>
+                    <td>Septiembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Elizabeth Gutiérrez Rodríguez</td>
+                    <td>elizabethgutierrez.rdz@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1976-05-28</td>
+                    <td>Mayo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Gaby Del Cojo Sescosse</td>
+                    <td>gabydelcojo@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1980-04-17</td>
+                    <td>Abril</td>
+                  </tr>
+
+                  <tr>
+                    <td>Ma de la Paz Acosta Herrera</td>
+                    <td>peace160174@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1974-01-16</td>
+                    <td>Enero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Carlos Alberto Flores Bañuelos</td>
+                    <td>pepofloresca@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1976-12-19</td>
+                    <td>Diciembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Juliana Arteaga Carrillo</td>
+                    <td>arte.arteaga@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1972-05-09</td>
+                    <td>Mayo</td>
+                  </tr>
+
+                  <tr>
+                    <td>María Elizabeth López</td>
+                    <td>maria_elizabeth.lopez@</td>
+                    <td>Zacatecas</td>
+                    <td>1989-01-18</td>
+                    <td>Enero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Heriberto Martinez hernandez</td>
+                    <td>heri_eto@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1980-01-29</td>
+                    <td>Enero</td>
+                  </tr>
+
+                  <tr>
+                    <td>Andrés Candelas Dominguez</td>
+                    <td>pulso1_0@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1987-07-24</td>
+                    <td>Julio</td>
+                  </tr>
+
+                  <tr>
+                    <td>René Alberto Flores</td>
+                    <td>gladiadorzacatecas@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1980-05-06</td>
+                    <td>Mayo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Denise ocaña martínez</td>
+                    <td>Deniseocsnam@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1985-06-06</td>
+                    <td>Junio</td>
+                  </tr>
+
+                  <tr>
+                    <td>René Alejo Menchaca</td>
+                    <td>rene__am@msn.com</td>
+                    <td>Zacatecas</td>
+                    <td>1988-07-26</td>
+                    <td>Julio</td>
+                  </tr>
+
+                  <tr>
+                    <td>David Castañón Ovalle</td>
+                    <td>davidcastanonovalle@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1989-11-19</td>
+                    <td>Noviembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>José de Jesús Alvarado Marquez</td>
+                    <td>iscloud@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1983-05-27</td>
+                    <td>Mayo</td>
+                  </tr>
+
+                  <tr>
+                    <td>Cristina Montserrat Díaz Rosales</td>
+                    <td>cdiaz.capital@gmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1984-10-03</td>
+                    <td>Noviembre</td>
+                  </tr>
+
+                  <tr>
+                    <td>Alejandro Morales Lechuga</td>
+                    <td>alexvans61@hotmail.com</td>
+                    <td>Zacatecas</td>
+                    <td>1985-02-05</td>
+                    <td>Febrero</td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="assets/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- datatables JS -->
+    <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
+    <!-- para usar botones en datatables JS -->
+    <script src="assets/datatables/Buttons-1.5.6/js/dataTables.buttons.min.js"></script>
+    <script src="assets/datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="assets/datatables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="assets/datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="assets/datatables/Buttons-1.5.6/js/buttons.html5.min.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
